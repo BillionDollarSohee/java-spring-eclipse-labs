@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\KOSA\Downloads\EMP_TWOTEAM_final\.metadata\.plugins\org.eclipse.jdt.core
+2912299721.index
+3413825354.index
+1865797976.index
+2558128262.index
+902777071.index
+3207128711.index
+2112112461.index

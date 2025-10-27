@@ -1,0 +1,125 @@
+1. 요구사항 분석
+2. DB 설계
+3. Table 생성
+
+create table memo(
+    id varchar2(20) not null,
+    email varchar2(20) not null,
+    content varchar2(100)
+);
+
+4. Model2 기반의 MVC 작업 (servlet 기반)
+
+5. 패키지
+6. kosa.co.kr
+
+6.1 kr.or.kosa.action
+    kr.or.kosa.ajax  (비동기 별도의 servlet : view 서버에서 생성 , 데이터 생성)
+    kr.or.kosa.controller : 규모가 커지면 > FrontBoardController , AdminController 
+    kr.or.kosa.dao
+    kr.or.kosa.dto
+    kr.or.kosa.service
+    kr.or.kosa.filter
+    kr.or.kosa.utils
+    
+    ---------------------
+    규모가 커지면 도메인별로 ....
+    kr.or.kosa.admin.dao
+    kr.or.kosa.dao.admin
+    
+    kr.or.kosa.board.dao
+    kr.or.kosa.dao.board
+    
+6.2 
+    controller 는 service 에 의존합니다 (controller 는 service 객체의 주소가 필요)
+    service 는 dao 에 의존합니다  (service 에서 dao new 하던 주소를 주입)
+    dao 는  dto 에 의존합니다 
+    
+    
+    dto -> dao -> service -> controller -> 데이터 view (forward) -> view (EL&JSTL) 출력
+    
+    
+6.3 Lib
+    DB연결
+    롬복
+    JSTL 
+    ...
+    Tomcat 10.x    
+    
+6.4 프로젝트 생성
+    DB연결... (DBCP) 구성 
+    
+    META-INF > context.xml
+    Lib > ojdbcx.jar
+    테스트용 파일 
+    
+    연결 OK
+    
+6.5 연결 helper 클래스         
+    kr.or.kosa.utils.ConnectionHelper.java
+    ConnectionHelper.jsp (연결 테스트)
+    
+6.6 서버 실행이 안되요 (web.xml  코드 문제 , 설정 (@.... ))
+   
+6.7 MPA
+웹서버가 클라이언트가 요청하는 모든 가지고 있고 만들고 서비스 하겠다
+관리)
+보안)
+webapp > WEB-INF > views > admin > admin.jsp
+
+/WEB-INF/views/board/list.jsp , write.jsp ....
+
+webapp > index.jsp or index.html (시작) 
+
+
+6.8
+
+DTO  -> DAO 생성
+고민 : lombok lib(생성자 , getter , setter , toString()
+
+DAO  -> 함수 기본 5개 (CRUD)   작업 완료
+
+
+6.9
+
+kr.or.kosa.action
+
+인터페이스  Action
+클래스 ActionForward
+
+화면 또는 처리 .... 두개 구현 강제 ... 표준화
+
+kr.or.kosa.service  
+구현
+요청마다 별도의 service
+
+반드시 ... 
+public class MemoListService  implements Action 강제 ....
+
+
+----------------------------------------------------------------------------
+kr.or.kosa.ajax
+
+두가지
+
+1. 기존 논리대로 
+MemoIdCheckService 만들어서 >> view 만들어서 >> uservalid.jsp 만들어서
+
+else if(urlCommand.equals("/MemoId.memo")) { //목록보기
+	       	 action = new MemoIdCheckService(); //다형성
+	       	 forward = action.execute(request, response); 
+    
+}    
+
+
+2. 별도로 servlet 을 만들어서 처리  (UI 가 없는 경우)
+
+>> ajax >> idCheck.java  >>  @WebServlet("/MemoId")
+        >> ReplyAdd.java >>  @WebServlet("/ReplyAdd")
+
+
+ ----------------------------------------------------------------
+ 인증처리
+ 
+ session 처리 
+ servlet session 처리하기  

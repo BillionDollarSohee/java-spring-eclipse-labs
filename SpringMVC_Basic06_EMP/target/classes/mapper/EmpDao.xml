@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.EmpDao">
+
+	 <!-- 사원 수 조회 -->
+	 <select id="getCount" resultType="int">
+	   SELECT COUNT(*) FROM EMP
+	 </select>
+
+	<!-- 사원 목록 (페이징 10개씩) -->
+	<select id="getEmplist" parameterType="map" resultType="vo.Emp">
+	    SELECT *
+	    FROM (
+	        SELECT ROWNUM NUM, E.*
+	        FROM (
+	            SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+	            FROM EMP
+	            ORDER BY EMPNO
+	        ) E
+	    )
+	    WHERE NUM BETWEEN #{start} AND #{end}
+	</select>
+
+
+  <!-- 사원 상세 조회 -->
+  <select id="getEmp" parameterType="int" resultType="vo.Emp">
+    SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+    FROM EMP
+    WHERE EMPNO = #{empno}
+  </select>
+
+  <!-- 사원 등록 -->
+  <insert id="insert" parameterType="vo.Emp">
+    INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO)
+    VALUES (#{empno}, #{ename}, #{job}, #{mgr}, SYSDATE, #{sal}, #{comm}, #{deptno})
+  </insert>
+
+  <!-- 사원 수정 -->
+  <update id="update" parameterType="vo.Emp">
+    UPDATE EMP
+    SET ENAME = #{ename},
+        JOB = #{job},
+        MGR = #{mgr},
+        SAL = #{sal},
+        COMM = #{comm},
+        DEPTNO = #{deptno}
+    WHERE EMPNO = #{empno}
+  </update>
+
+  <!-- 사원 삭제 -->
+  <delete id="delete" parameterType="int">
+    DELETE FROM EMP WHERE EMPNO = #{empno}
+  </delete>
+
+</mapper>

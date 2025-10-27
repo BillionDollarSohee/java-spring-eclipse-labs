@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 최상단에 @Autowired 선행객체 자동 등록 -->
+<context:annotation-config />
+
+<!-- TEST_1  @Controller 자동으로 빈객체가 되지 않아요 -->
+  <bean id="helloController" class="com.controller.HelloController"></bean>
+  
+<!-- TEST_2  하나의 요청 주소에서 메소드로 판단
+GET  (화면) > 함수호출
+POST (처리) > 처리함수호출
+-->
+
+<bean class = "com.controller.NewArticleController"></bean>
+<bean class = "com.service.ArticleService"></bean>
+
+
+<!-- Test_3 -->
+<bean class = "com.controller.OrderController"></bean>
+
+<!-- Test_4 -->
+<bean class = "com.controller.SearchController"></bean>
+
+<!-- Test_5 쿠키 -->
+<bean class = "com.controller.CookieController"></bean>
+
+<!-- Test_6 파일 업로드 -->
+<!-- 
+		import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+		import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
+		CommonsMultipartFile 사용해서  업로드를 할려면 몇가지 기본 세팅
+        
+        CommonsMultipartResolver  : 업로드한 파일에 대한 정보 관리(크기 , 이름....)
+
+		파일 처리 (의존 객체)
+		//C:\Spring\Framework\spring-framework-3.0.2.RELEASE-dependencies\org.apache.commons\com.springsource.org.apache.commons.fileupload\1.2.0
+		com.springsource.org.apache.commons.fileupload-1.2.0.jar
+		com.springsource.org.apache.commons.io-1.4.0.jar
+
+		CommonsMultipartResolver  : 업로드한 파일에 정보 관리(크기 , 이름  , 중복이름 정책)
+	
+	 -->
+	 <!--
+		<property name="uploadTempDir" value="uploadTempDir"/>
+		<bean id="uploadTempDir" class="org.springframework.core.io.FileSystemResource">
+		<constructor-arg value="c:/temp/"/>
+		</bean>
+	-->
+	<bean class="com.controller.ImageController"></bean>
+	<bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+			<property name="maxUploadSize" value="1048760"></property>
+			<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+  <bean id="internalResourceViewResolver"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean> 
+</beans> 

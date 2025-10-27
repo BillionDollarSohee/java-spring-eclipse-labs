@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 
+	객체의 생성 과 조립 > xml 파일에서 
+	(기존 new .... setter 주입 : main 함수) > spring 에게 ....
+
+	MessageBean messageBean = new MessageBean_kr();
+	
+	Spring regacy message에서 객체의 생성과 조립 설정 (DI 주입)
+	1. xml 파일
+	2. @Configuration 설정을 가지고 있는 java 파일
+	
+	
+	클래스명을 쓸때 클래스경로도 '.' 으로 알려주어야 한다.
+ -->
+	<bean id="messageBean" class="DI_03_Spring.MessageBean_en"></bean>
+</beans>
