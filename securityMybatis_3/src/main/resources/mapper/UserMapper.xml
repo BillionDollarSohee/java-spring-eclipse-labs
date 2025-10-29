@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+<!-- properties aliases에 경로를 설정해 두어서 타입이 짧아짐 -->
+
+
+	<resultMap type="Users" id="userMap">
+        <id     property="userNo"  column="user_no" />
+        <result property="userId"  column="user_id" />
+        <result property="userPw"  column="user_pw" />
+        <result property="name"    column="name" />
+        <result property="email"   column="email" />
+        <result property="enabled" column="enabled" />
+        <result property="regDate" column="reg_date" />
+        <result property="updDate" column="upd_date" />
+
+        <collection property="authList" resultMap="authMap"></collection>
+    </resultMap>
+    
+    <resultMap type="UserAuth" id="authMap">
+    	<result property="userId"  column="user_id"/>
+    	<result property="auth"    column="auth"/>
+    </resultMap>
+    
+    <!-- 디비 칼럼명과 dto 필드명이 일치하지 않아서 매핑 -->
+    <select id ="login" resultMap ="userMap">
+			SELECT u.user_no,
+				 u.user_id,
+				 u.user_pw,
+				 u.name,
+				 u.email,
+				 u.enabled,
+				 u.reg_date,
+				 u.upd_date,
+				 auth.auth
+			FROM USER u JOIN user_auth auth
+				ON u.user_id = auth.user_id
+			WHERE u.user_id=#{admin}
+    </select>
+    
+
+    <insert id="join" parameterType="Users">
+    	insert into user(user_id, user_pw, name, email)
+    	value(#{userId},#{userPw},#{name},#{email})
+    </insert>
+    
+    <!-- 시큐리티 사용하면 회원가입시 롤도 같이 부여해야한다
+    1. default role 지정하거나
+    2. 트랜잭션 걸어서 롤지정하거나
+    3. PL-SQL Trigger 사용하기 -->
+	<insert id="insertAuth" parameterType="UserAuth">
+    	insert into user_auth(user_id, auth)
+    	value(#{userId},#{auth})
+    </insert>
+	
+</mapper>

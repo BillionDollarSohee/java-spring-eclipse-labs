@@ -1,0 +1,144 @@
+[2025-10-28 15:44:52.145] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:44:52.145] END com.example.demo.service.Calc.Add result=8 executionTime=0.24 ms
+[2025-10-28 15:44:52.147] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:44:52.147] END com.example.demo.service.Calc.Sub result=7 executionTime=0.17 ms
+[2025-10-28 15:44:52.147] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:44:52.147] END com.example.demo.service.Calc.Mul result=24 executionTime=0.11 ms
+[2025-10-28 15:44:52.147] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:44:52.147] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.19 ms
+[2025-10-28 15:45:13.918] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:45:13.918] END com.example.demo.service.Calc.Add result=8 executionTime=0.21 ms
+[2025-10-28 15:45:13.918] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:45:13.918] END com.example.demo.service.Calc.Sub result=7 executionTime=0.10 ms
+[2025-10-28 15:45:13.918] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:45:13.918] END com.example.demo.service.Calc.Mul result=24 executionTime=0.12 ms
+[2025-10-28 15:45:13.919] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:45:13.919] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.15 ms
+[2025-10-28 15:45:20.558] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:45:20.558] END com.example.demo.service.Calc.Add result=8 executionTime=0.27 ms
+[2025-10-28 15:45:20.559] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:45:20.559] END com.example.demo.service.Calc.Sub result=7 executionTime=0.11 ms
+[2025-10-28 15:45:20.559] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:45:20.559] END com.example.demo.service.Calc.Mul result=24 executionTime=0.09 ms
+[2025-10-28 15:45:20.559] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:45:20.559] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.18 ms
+[2025-10-28 15:46:04.621] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:46:04.621] END com.example.demo.service.Calc.Add result=8 executionTime=0.18 ms
+[2025-10-28 15:46:04.622] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:46:04.622] END com.example.demo.service.Calc.Sub result=7 executionTime=0.12 ms
+[2025-10-28 15:46:04.622] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:46:04.622] END com.example.demo.service.Calc.Mul result=24 executionTime=0.38 ms
+[2025-10-28 15:46:04.623] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:46:04.623] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.27 ms
+[2025-10-28 15:46:10.248] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:46:10.248] END com.example.demo.service.Calc.Add result=8 executionTime=0.19 ms
+[2025-10-28 15:46:10.249] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:46:10.249] END com.example.demo.service.Calc.Sub result=7 executionTime=0.08 ms
+[2025-10-28 15:46:10.249] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:46:10.249] END com.example.demo.service.Calc.Mul result=24 executionTime=0.08 ms
+[2025-10-28 15:46:10.249] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:46:10.249] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.11 ms
+[2025-10-28 15:46:54.016] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:46:54.016] END com.example.demo.service.Calc.Add result=8 executionTime=0.65 ms
+[2025-10-28 15:46:54.017] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:46:54.017] END com.example.demo.service.Calc.Sub result=7 executionTime=0.15 ms
+[2025-10-28 15:46:54.018] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:46:54.018] END com.example.demo.service.Calc.Mul result=24 executionTime=0.17 ms
+[2025-10-28 15:46:54.018] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:46:54.018] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.20 ms
+[2025-10-28 15:50:50.749] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:50:50.749] END com.example.demo.service.Calc.Add result=8 executionTime=0.25 ms
+[2025-10-28 15:50:50.749] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:50:50.749] END com.example.demo.service.Calc.Sub result=7 executionTime=0.13 ms
+[2025-10-28 15:50:50.750] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:50:50.750] END com.example.demo.service.Calc.Mul result=24 executionTime=0.20 ms
+[2025-10-28 15:50:50.750] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:50:50.750] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.39 ms
+[2025-10-28 15:50:56.430] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:50:56.430] END com.example.demo.service.Calc.Add result=8 executionTime=0.23 ms
+[2025-10-28 15:50:56.431] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:50:56.431] END com.example.demo.service.Calc.Sub result=7 executionTime=0.12 ms
+[2025-10-28 15:50:56.431] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:50:56.431] END com.example.demo.service.Calc.Mul result=24 executionTime=0.37 ms
+[2025-10-28 15:50:56.431] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:50:56.431] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.20 ms
+[2025-10-28 15:51:15.202] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:51:15.202] END com.example.demo.service.Calc.Add result=8 executionTime=0.21 ms
+[2025-10-28 15:51:15.203] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:51:15.203] END com.example.demo.service.Calc.Sub result=7 executionTime=0.15 ms
+[2025-10-28 15:51:15.204] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:51:15.204] END com.example.demo.service.Calc.Mul result=24 executionTime=0.25 ms
+[2025-10-28 15:51:15.204] START com.example.demo.service.Calc.Div args=[8, 2]
+[2025-10-28 15:51:15.204] END com.example.demo.service.Calc.Div result=4 executionTime=0.10 ms
+[2025-10-28 15:51:15.204] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:51:15.204] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.16 ms
+[2025-10-28 15:51:15.205] START com.example.demo.service.Calc.Add args=[1, 2]
+[2025-10-28 15:51:15.205] END com.example.demo.service.Calc.Add result=3 executionTime=0.10 ms
+[2025-10-28 15:51:15.206] START com.example.demo.service.Calc.Add args=[2, 4]
+[2025-10-28 15:51:15.206] END com.example.demo.service.Calc.Add result=6 executionTime=0.30 ms
+[2025-10-28 15:51:15.207] START com.example.demo.service.Calc.Add args=[3, 6]
+[2025-10-28 15:51:15.207] END com.example.demo.service.Calc.Add result=9 executionTime=0.09 ms
+[2025-10-28 15:51:15.207] START com.example.demo.service.Calc.Add args=[4, 8]
+[2025-10-28 15:51:15.207] END com.example.demo.service.Calc.Add result=12 executionTime=0.17 ms
+[2025-10-28 15:51:15.207] START com.example.demo.service.Calc.Add args=[5, 10]
+[2025-10-28 15:51:15.207] END com.example.demo.service.Calc.Add result=15 executionTime=0.09 ms
+[2025-10-28 15:51:51.687] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:51:51.687] END com.example.demo.service.Calc.Add result=8 executionTime=0.20 ms
+[2025-10-28 15:51:51.688] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:51:51.688] END com.example.demo.service.Calc.Sub result=7 executionTime=0.08 ms
+[2025-10-28 15:51:51.688] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:51:51.688] END com.example.demo.service.Calc.Mul result=24 executionTime=0.11 ms
+[2025-10-28 15:51:51.688] START com.example.demo.service.Calc.Div args=[8, 2]
+[2025-10-28 15:51:51.688] END com.example.demo.service.Calc.Div result=4 executionTime=0.07 ms
+[2025-10-28 15:51:51.689] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:51:51.689] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.15 ms
+[2025-10-28 15:51:51.689] START com.example.demo.service.Calc.Add args=[1, 2]
+[2025-10-28 15:51:51.689] END com.example.demo.service.Calc.Add result=3 executionTime=0.07 ms
+[2025-10-28 15:51:51.689] START com.example.demo.service.Calc.Add args=[2, 4]
+[2025-10-28 15:51:51.689] END com.example.demo.service.Calc.Add result=6 executionTime=0.06 ms
+[2025-10-28 15:51:51.689] START com.example.demo.service.Calc.Add args=[3, 6]
+[2025-10-28 15:51:51.689] END com.example.demo.service.Calc.Add result=9 executionTime=0.07 ms
+[2025-10-28 15:51:51.689] START com.example.demo.service.Calc.Add args=[4, 8]
+[2025-10-28 15:51:51.689] END com.example.demo.service.Calc.Add result=12 executionTime=0.08 ms
+[2025-10-28 15:51:51.689] START com.example.demo.service.Calc.Add args=[5, 10]
+[2025-10-28 15:51:51.689] END com.example.demo.service.Calc.Add result=15 executionTime=0.08 ms
+[2025-10-28 15:52:46.655] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:52:46.655] END com.example.demo.service.Calc.Add result=8 executionTime=0.68 ms
+[2025-10-28 15:52:46.656] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:52:46.656] END com.example.demo.service.Calc.Sub result=7 executionTime=0.20 ms
+[2025-10-28 15:52:46.656] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:52:46.656] END com.example.demo.service.Calc.Mul result=24 executionTime=0.19 ms
+[2025-10-28 15:52:46.657] START com.example.demo.service.Calc.Div args=[8, 2]
+[2025-10-28 15:52:46.657] END com.example.demo.service.Calc.Div result=4 executionTime=0.14 ms
+[2025-10-28 15:52:46.657] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:52:46.657] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.19 ms
+[2025-10-28 15:52:46.657] START com.example.demo.service.Calc.Add args=[1, 2]
+[2025-10-28 15:52:46.657] END com.example.demo.service.Calc.Add result=3 executionTime=0.13 ms
+[2025-10-28 15:52:46.658] START com.example.demo.service.Calc.Add args=[2, 4]
+[2025-10-28 15:52:46.658] END com.example.demo.service.Calc.Add result=6 executionTime=0.16 ms
+[2025-10-28 15:52:46.658] START com.example.demo.service.Calc.Add args=[3, 6]
+[2025-10-28 15:52:46.658] END com.example.demo.service.Calc.Add result=9 executionTime=0.13 ms
+[2025-10-28 15:52:46.658] START com.example.demo.service.Calc.Add args=[4, 8]
+[2025-10-28 15:52:46.658] END com.example.demo.service.Calc.Add result=12 executionTime=0.13 ms
+[2025-10-28 15:52:46.658] START com.example.demo.service.Calc.Add args=[5, 10]
+[2025-10-28 15:52:46.658] END com.example.demo.service.Calc.Add result=15 executionTime=0.12 ms
+[2025-10-28 15:53:09.840] START com.example.demo.service.Calc.Add args=[3, 5]
+[2025-10-28 15:53:09.840] END com.example.demo.service.Calc.Add result=8 executionTime=0.19 ms
+[2025-10-28 15:53:09.841] START com.example.demo.service.Calc.Sub args=[10, 3]
+[2025-10-28 15:53:09.841] END com.example.demo.service.Calc.Sub result=7 executionTime=0.16 ms
+[2025-10-28 15:53:09.841] START com.example.demo.service.Calc.Mul args=[4, 6]
+[2025-10-28 15:53:09.841] END com.example.demo.service.Calc.Mul result=24 executionTime=0.29 ms
+[2025-10-28 15:53:09.842] START com.example.demo.service.Calc.Div args=[8, 2]
+[2025-10-28 15:53:09.842] END com.example.demo.service.Calc.Div result=4 executionTime=0.15 ms
+[2025-10-28 15:53:09.842] START com.example.demo.service.Calc.Div args=[8, 0]
+[2025-10-28 15:53:09.842] ERROR com.example.demo.service.Calc.Div exception=java.lang.ArithmeticException: / by zero executionTime=0.17 ms
+[2025-10-28 15:53:09.842] START com.example.demo.service.Calc.Add args=[1, 2]
+[2025-10-28 15:53:09.842] END com.example.demo.service.Calc.Add result=3 executionTime=0.12 ms
+[2025-10-28 15:53:09.842] START com.example.demo.service.Calc.Add args=[2, 4]
+[2025-10-28 15:53:09.842] END com.example.demo.service.Calc.Add result=6 executionTime=0.11 ms
+[2025-10-28 15:53:09.843] START com.example.demo.service.Calc.Add args=[3, 6]
+[2025-10-28 15:53:09.843] END com.example.demo.service.Calc.Add result=9 executionTime=0.13 ms
+[2025-10-28 15:53:09.843] START com.example.demo.service.Calc.Add args=[4, 8]
+[2025-10-28 15:53:09.843] END com.example.demo.service.Calc.Add result=12 executionTime=0.09 ms
+[2025-10-28 15:53:09.843] START com.example.demo.service.Calc.Add args=[5, 10]
+[2025-10-28 15:53:09.843] END com.example.demo.service.Calc.Add result=15 executionTime=0.09 ms

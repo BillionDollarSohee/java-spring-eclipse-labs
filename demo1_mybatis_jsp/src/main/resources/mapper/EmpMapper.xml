@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  
+
+	List<EmpDeptDto> findAllWithDept();
+-->
+<mapper namespace="com.example.demo.mapper.EmpMapper">
+   <select id="findAllWithDept" resultType="com.example.demo.model.EmpDeptDto">
+   	   select e.empno,
+   	          e.ename,
+   	          e.job,
+   	          e.sal,
+   	          e.deptno,
+   	          d.dname
+       from emp e join dept d
+       on e.deptno = d.deptno
+   </select>
+	
+</mapper>
