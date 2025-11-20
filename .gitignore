@@ -1,0 +1,19 @@
+# Docker
+spring_docker_hello/mysql_data/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Build and output directories
+/bin/
+/target/
+/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
